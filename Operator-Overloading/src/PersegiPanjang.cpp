@@ -260,8 +260,8 @@
                 PersegiPanjang persegi = PersegiPanjang(0.00, 0.00, 0.00, 0.00);
                 if((irisan.xmax - irisan.xmin) > (irisan.ymax - irisan.ymin))
                 {
-                        persegi.xmin = irisan.xmin - ((irisan.xmax + irisan.xmin) / 2);
-                        persegi.xmax = irisan.xmax + ((irisan.xmax + irisan.xmin) / 2);
+                        persegi.xmin = irisan.xmin + ((irisan.xmax + irisan.xmin) / 2);
+                        persegi.xmax = irisan.xmax - ((irisan.xmax + irisan.xmin) / 2);
                         persegi.ymin = irisan.ymin;
                         persegi.ymax = irisan.ymax;
 
@@ -272,8 +272,8 @@
                 {
                         persegi.xmin = irisan.xmin;
                         persegi.xmax = irisan.xmax;
-                        persegi.ymin = irisan.ymin - ((irisan.xmax + irisan.xmin) / 2);
-                        persegi.ymax = irisan.ymax + ((irisan.xmax + irisan.xmin) / 2);
+                        persegi.ymin = irisan.ymin + ((irisan.xmax + irisan.xmin) / 2);
+                        persegi.ymax = irisan.ymax - ((irisan.xmax + irisan.xmin) / 2);
 
                         return persegi;
 
